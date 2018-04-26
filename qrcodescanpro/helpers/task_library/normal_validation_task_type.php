@@ -1,0 +1,35 @@
+<?php
+class AP_Normal_Validation_Task_Type extends AP_Base_Task_Type
+{
+    
+    protected $name_space = __CLASS__;
+    protected $field_type = "normal_validation";
+    protected $field_name = "Normal Validation";
+    protected $admin_fields;
+    private static $_instance = null;
+    
+    public static function get_instance()
+    {
+        if (self::$_instance == null) {
+            self::$_instance = new self();
+        }
+        
+        return self::$_instance;
+    }
+
+    
+
+    protected function admin_output()
+    {
+         die("dsfdsf");
+    }
+
+    function admin_fields(){
+        
+    }
+
+    
+    
+    
+    
+}
